@@ -1,1 +1,13 @@
+You are given an integer n. Your task is to determine whether n is a power of 4.
 
+Print "Yes" if n is a power of 4. otherwise, print "No"
+
+Input Format:A single Integer n
+
+Output Format:Print "Yes" if n is a power of 4 Print "No" otherwise
+
+Sample Input 0:16
+Sample Output 0:Yes
+
+Sample Input 1:12
+Sample Output 1:No
