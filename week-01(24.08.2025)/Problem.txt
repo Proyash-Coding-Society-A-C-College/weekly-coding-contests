@@ -1,3 +1,5 @@
+                                 Problem given by:Sandeep Roy
+
 You are given an integer n. Your task is to determine whether n is a power of 4.
 
 Print "Yes" if n is a power of 4. otherwise, print "No"
