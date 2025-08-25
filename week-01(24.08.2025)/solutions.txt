@@ -1,1 +1,112 @@
+                           Problem Created by: Sandeep Roy
+
+                                 Submissions:
+                       Constent Name: Debashis Roy
+                       Rank based on submission time: 1
+
+code:
+#include<iostream>
+using namespace std;
+int main(){
+    int n;
+    cin>>n;
+    if (n<=0){
+        cout<<"No"<<endl;
+        return 0;
+     
+        
+    }while (n%4==0){
+        n/=4;
+
+    }
+    if(n==1){
+        cout<<"Yes"<<endl;
+    }
+    else{
+        cout<<"No"<<endl;
+    }
+    return 0;
+    {
+        
+    }
+    
+}
+
+                                  Constent Name: Masud Ali
+                                  Rank based on submission time: 2
+
+code:
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    int a,c=1;
+    cin>>a;
+    if(a==0)
+       {
+           cout<<"No";
+           
+       }
+    else if(a==1)
+    {
+        cout<<"Yes";
+    }
+    else if(a<0)
+    {
+        cout<<"No";
+    }
+    else
+    {
+          int i=1;
+    while(c)
+    {
+        i=i*4;
+        if(i==a)
+        {
+            cout<<"Yes";
+            c=0;
+        }
+        if(i>a)
+        {
+            cout<<"No";
+            c=0;
+        }
+    }  
+    }
+    
+    return 0;
+}
+                                  Constent Name: Sayandweep Roy
+                                  Rank based on submission time: 3
+
+
+code:
+#include <iostream>
+using namespace std;
+
+bool isPowerOfFour(int n) {
+    if (n <= 0) return false;
+    while (n % 4 == 0) {
+        n /= 4;
+    }
+    return n == 1;
+}
+
+int main() {
+    int n;
+    cin >> n;
+    if (isPowerOfFour(n))
+        cout << "Yes";
+    else
+        cout << "No";
+    return 0;
+}
+
+
 
