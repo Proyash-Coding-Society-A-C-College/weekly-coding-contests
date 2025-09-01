@@ -1,4 +1,129 @@
                      Problem Given By: Masud Ali
                      
                              Submissions:
-                             
+                            
+                       Contestant Name: Sandeep Roy
+                       Rank based on submission time: 1
+
+ code:
+
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    int N;
+    long long x,y,z;
+    cin >> N >> x>> y >> z;
+    long long low =1;
+    for(int i=1;i< N ;i++){
+        low *= 10;
+    }
+    long long high = low *10 -1;
+    for (long long n= low ; n<= high ;n++){
+        if(n%x==0 && n%y ==0 && n%z==0){
+            cout << n;
+            return 0;
+        }
+    }
+    cout << -1;
+    return 0;
+}
+
+
+                                  Contestant Name: Sayandweep Roy
+                                  Rank based on submission time: 2
+
+code:
+
+#include <iostream>
+#include <algorithm>
+#include <cmath>
+using namespace std;
+
+// Function to compute LCM of two numbers using long long
+long long lcm(long long a, long long b) {
+    return (a / __gcd(a, b)) * b;
+}
+
+int main() {
+    int N;
+    long long X, Y, Z;
+    cin >> N >> X >> Y >> Z;
+
+    // Calculate the LCM of X, Y, and Z
+    long long lcm_xy = lcm(X, Y);
+    long long lcm_xyz = lcm(lcm_xy, Z);
+
+    // Smallest N-digit number
+    long long start = pow(10LL, N - 1);
+    long long end = pow(10LL, N) - 1;
+
+    // Find the smallest N-digit number divisible by lcm_xyz
+    long long result = ((start + lcm_xyz - 1) / lcm_xyz) * lcm_xyz;
+
+    if (result > end)
+        cout << -1 << endl;
+    else
+        cout << result << endl;
+
+    return 0;
+}
+                                  Contestant Name: Aritra Shill
+                                  Rank based on submission time: 3
+
+
+code:
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+long gcd(long a, long b) 
+{
+    return b == 0 ? a : gcd(b, a % b);
+}
+
+long lcm(long a, long b) 
+{
+    return a * b / gcd(a, b);
+}
+
+long lcm3(long x, long y, long z) 
+{
+    return lcm(lcm(x, y), z);
+}
+
+int main() 
+{
+    long X, Y, Z, N;
+    scanf("%d %d %d %d", &X, &Y, &Z, &N);
+
+    long lcm_xyz = lcm3(X, Y, Z);
+
+    long lower = 1;
+    for (long i = 1; i < N; i++)
+        lower *= 10;
+
+    long remainder = lower % lcm_xyz;
+    long answer;
+
+    if (remainder == 0)
+        answer = lower;
+    else
+        answer = lower + (lcm_xyz - remainder);
+
+    long upper = lower * 10;
+
+    if (answer < upper)
+        printf("%d\n", answer);
+    else
+        printf("-1\n");
+
+    return 0;
+}
