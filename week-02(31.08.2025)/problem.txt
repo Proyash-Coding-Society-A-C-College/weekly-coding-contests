@@ -1,0 +1,38 @@
+
+You are given four integers X, Y, Z and N. Find the smallest N-digit number that is divisible by all three numbers X, Y, and Z. If no such number exists, print -1image
+
+Input Format:
+ A single integer N, the number of digits.
+ ex:
+N=1 means 1-9;
+N=2 means 10-99 etc..
+  Three  integers X, Y, Z.
+  
+Output Format:
+
+Print the smallest N-digit number divisible by X, Y, and Z.
+
+ If no such number exists, print -1
+
+
+Sample Input 0
+
+2
+2 3 5
+Sample Output 0
+
+30
+Sample Input 1
+
+2
+3 5 7
+Sample Output 1
+
+-1
+Sample Input 2
+
+1
+3 7 9
+Sample Output 2
+
+-1
