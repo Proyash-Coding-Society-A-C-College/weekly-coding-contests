@@ -1,3 +1,4 @@
+                Problem Given By: Masud Ali
 
 You are given four integers X, Y, Z and N. Find the smallest N-digit number that is divisible by all three numbers X, Y, and Z. If no such number exists, print -1image
 
