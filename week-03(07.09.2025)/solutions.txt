@@ -1,1 +1,40 @@
+Problem Given by: Sandeep Roy
 
+                                 Submissions:
+                       Contestant Name: Masud Ali
+                       Rank based on submission time: 1
+
+code:
+#include <iostream>
+#include <iomanip> // for setprecision
+using namespace std;
+
+int main() {
+    int u, a, t;
+    cin >> u >> a >> t;
+
+    double s = u * t + 0.5 * a * t * t;
+
+    cout  << fixed << setprecision(2)<<s << endl;
+
+    return 0;
+}
+                                  Contestant Name: Jibon Roy
+                                  Rank based on submission time: 2
+
+code:
+#include<iostream>
+#include<iomanip>
+
+
+using namespace std;
+
+
+int main() {
+    int u,a,t;
+    cin >> u >> a >> t;
+    double displacement = (u*t)+(0.5 * a * t * t);
+    cout << fixed <<setprecision(2)<<displacement<<endl;
+    return 0;
+}
+                                
