@@ -1,1 +1,47 @@
+                                 Problem Given by:Sandeep Roy
 
+You are waiting for a bus that starts from rest at the station, accelerates uniformly, and you want to know how far it has gone after some time.
+
+But there's a condition:
+
+The bus doesn’t always start from rest. Sometimes it already has an initial velocity u
+
+It then accelerates at a constant rate a for t seconds.
+
+Your task is to find the total displacement of the bus after t seconds.
+
+Displacement is given by:
+
+S = u×t + (1/2) a×t^2
+
+Input Format:
+
+Three integers:
+
+u = initial velocity (m/s)
+
+a = acceleration (m/s²)
+
+t = time (s)
+
+Constraints:
+
+0≤u≤100000
+-100≤a≤100
+1≤t≤100000
+Output Format
+
+Print the displacement (in meters), rounded to 2 decimal places
+
+Sample Input 0:
+
+0 2 5
+Sample Output 0:
+
+25.00
+Sample Input 1:
+
+10 1 4 
+Sample Output 1:
+
+48.00
