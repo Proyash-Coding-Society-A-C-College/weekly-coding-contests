@@ -6,7 +6,7 @@ Problem Given by: Sandeep Roy
 
 code:
 #include <iostream>
-#include <iomanip> // for setprecision
+#include <iomanip>
 using namespace std;
 
 int main() {
