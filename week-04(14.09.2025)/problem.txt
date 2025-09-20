@@ -1,1 +1,60 @@
+                                        Problem Given By: Masud Ali
 
+You are climbing a staircase. It takes n steps to reach the top.
+
+Each time you can either climb 1 step or 2 steps.
+
+Your task is to determine in how many distinct ways you can climb to the top.
+
+Input Format:
+
+ A single integer N, the number of steps.
+Constraints
+
+ 1 <= n <= 45
+Output Format
+
+Print a single integer — the number of distinct ways to climb to the   top.
+Sample Input 0
+
+2
+Sample Output 0
+
+2
+Explanation 0
+
+There are two ways to climb to the top.
+ 1. 1 step + 1 step
+ 2. 2 steps
+
+Sample Input 1
+
+3
+Sample Output 1
+
+3
+Explanation 1
+
+ There are three ways to climb to the top.
+   1. 1 step + 1 step + 1 step
+   2. 1 step + 2 steps
+   3. 2 steps + 1 step
+Sample Input 2
+
+4
+Sample Output 2
+
+5
+Explanation 2
+
+There are five ways to climb to the top:
+
+1.1 step + 1 step + 1 step + 1 step
+
+2.1 step + 1 step + 2 steps
+
+3.1 step + 2 steps + 1 step
+
+4.2 steps + 1 step + 1 step
+
+5.2 steps + 2 steps
