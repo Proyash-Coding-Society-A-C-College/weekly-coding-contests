@@ -1,1 +1,45 @@
+Given an array arr[] of size n, containing elements from the range 1 to n, and each element appears at most twice, return an array of all the integers that appears twice.
+
+Note: You can return the elements in any order but the driver code will print them in sorted order.
+
+Examples:
+
+Input: arr[] = [2, 3, 1, 2, 3] Output: [2, 3] Explanation: 2 and 3 occur more than once in the given array. Input: arr[] = [3, 1, 2] Output: [] Explanation: There is no repeating element in the array, so the output is empty.
+
+Input Format
+
+The first line contains an integer n, the size of the array. The second line contains n space separated integers representing the array arr[].
+
+Constraints
+
+1 ≤ n ≤ 106 1 ≤ arr[i] ≤ n
+
+Output Format
+
+For each test case, print all the integers that appear exactly twice in the array.
+
+If no element appears twice, print -1.
+
+Print the result of each test case on a new line.
+
+The output elements will be printed in sorted order (handled by the driver code).
+
+Sample Input 0
+
+7
+4 3 2 7 8 2 3
+
+Sample Output 0
+
+2 3
+
+Sample Input 1
+
+5
+1 2 3 4 5
+
+Sample Output 1
+
+-1
+
 
