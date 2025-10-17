@@ -1,1 +1,38 @@
+Given an integer num, repeatedly add all its digits until the result has only one digit, and print it.
+
+Input Format
+
+A single integer num.
+
+Constraints
+
+ 0 <= num <= 231 - 1
+
+Output Format
+
+Print a single integer — the result after repeatedly summing the digits until a single digit remains.
+
+Sample Input 0
+
+38
+
+Sample Output 0
+
+2
+
+Explanation 0
+
+ The process is
+ 38 --> 3 + 8 --> 11
+ 11 --> 1 + 1 --> 2 
+ Since 2 has only one digit, return it.
+
+Sample Input 1
+
+0
+
+Sample Output 1
+
+0
+
 
